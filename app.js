@@ -3,7 +3,7 @@ async function loadData() {
   const end = document.getElementById("end").value || "2025-09-30";
 
   // 🔗 Mets ton URL Google Apps Script déployé
-  const url = `https://script.google.com/macros/s/TON_SCRIPT_ID/exec?start=${start}&end=${end}`;
+  const url = `https://script.google.com/macros/s/AKfycby2kNimrkxan5P_X6kUfF93sPewxO4YwvAVqLn0bNVmgZOQJM2naS6dfS9Y_y_ZEvjQ/exec`;
 
   const response = await fetch(url);
   const data = await response.json();
@@ -56,4 +56,5 @@ window.onload = () => {
   document.getElementById("end").value = today.toISOString().split("T")[0];
 
   loadData();
+
 };
