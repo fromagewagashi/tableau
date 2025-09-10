@@ -2,42 +2,45 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tableau de bord - Ventes</title>
+  <title>Tableau de Bord des Ventes</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <header>
-    <h1>Tableau de bord des ventes</h1>
+    <h1>📊 Tableau de Bord des Ventes</h1>
   </header>
 
-  <section class="date-selector">
-    <label for="start">Début :</label>
-    <input type="date" id="start">
-    <label for="end">Fin :</label>
-    <input type="date" id="end">
-    <button onclick="loadData()">Afficher</button>
-  </section>
+  <main>
+    <section class="kpi">
+      <div class="card">
+        <h2 id="totalOrders">0</h2>
+        <p>Commandes totales</p>
+      </div>
+      <div class="card">
+        <h2 id="totalSales">0 FCFA</h2>
+        <p>Ventes totales</p>
+      </div>
+    </section>
 
-  <section class="cards">
-    <div class="card">
-      <h2 id="totalOrders">0</h2>
-      <p>Nombre total de commandes</p>
-    </div>
-    <div class="card">
-      <h2 id="totalSales">0 FCFA</h2>
-      <p>Montant total des ventes</p>
-    </div>
-  </section>
+    <section class="filters">
+      <label for="start">Date de début :</label>
+      <input type="date" id="start">
+      <label for="end">Date de fin :</label>
+      <input type="date" id="end">
+      <button onclick="loadData()">Appliquer</button>
+    </section>
 
-  <section class="chart-container">
-    <canvas id="salesChart"></canvas>
-  </section>
+    <section class="chart-container" id="chart-container">
+      <canvas id="salesChart"></canvas>
+    </section>
+  </main>
 
-  <!-- Chart.js depuis CDN (option la plus simple) -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <footer>
+    <p>⚡ Tableau connecté à Google Sheets</p>
+  </footer>
 
-  <!-- Notre script -->
   <script src="script.js"></script>
 </body>
 </html>
