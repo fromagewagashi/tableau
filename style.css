@@ -1,5 +1,4 @@
 /* style.css */
-
 body {
   font-family: 'Segoe UI', Tahoma, sans-serif;
   margin: 0;
@@ -13,92 +12,79 @@ header {
   color: #fff;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
 }
 
-h1 {
-  margin: 0;
-  font-size: 1.8rem;
-}
+h1 { margin: 0; font-size: 1.6rem; }
 
 main {
   padding: 20px;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
 }
 
 .kpi {
   display: flex;
   gap: 20px;
-  justify-content: space-around;
-  margin-bottom: 20px;
+  justify-content: center;
+  margin-bottom: 18px;
   flex-wrap: wrap;
 }
 
 .card {
   background: #fff;
-  padding: 20px;
+  padding: 18px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 18px rgba(13,110,253,0.06);
   text-align: center;
   flex: 1;
-  min-width: 200px;
+  min-width: 220px;
+  max-width: 360px;
 }
 
-.card h2 {
-  margin: 0;
-  font-size: 2rem;
-  color: #0d6efd;
-}
+.card h2 { margin: 0; font-size: 1.8rem; color: #0d6efd; }
 
 .filters {
   background: #fff;
-  padding: 15px;
+  padding: 12px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
   display: flex;
   gap: 10px;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
-.filters label {
-  font-weight: 500;
-}
-
+.filters label { font-weight: 600; }
 .filters input, .filters button {
-  padding: 8px 12px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
 }
-
 .filters button {
   background: #0d6efd;
   color: #fff;
   border: none;
   cursor: pointer;
-  transition: background 0.3s;
 }
-
-.filters button:hover {
-  background: #084298;
-}
+.filters button:hover { background: #084298; }
 
 .chart-container {
   background: #fff;
-  padding: 20px;
+  padding: 16px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  min-height: 350px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+  min-height: 360px;
+  position: relative;
 }
 
 footer {
-  margin-top: 30px;
+  margin-top: 24px;
   text-align: center;
-  padding: 15px;
-  background: #eee;
-  font-size: 0.9rem;
+  padding: 12px;
   color: #666;
+  font-size: 0.9rem;
 }
