@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Tableau de Bord des Ventes</title>
+  <meta charset="utf-8">
+  <title>Tableau de bord - Ventes</title>
   <link rel="stylesheet" href="style.css">
   <!-- Chart.js CDN -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <header>
-    <h1>📊 Tableau de Bord des Ventes</h1>
+    <h1>📊 Tableau de bord des ventes</h1>
   </header>
 
   <main>
@@ -29,16 +29,18 @@
       <input type="date" id="start">
       <label for="end">Date de fin :</label>
       <input type="date" id="end">
-      <button onclick="loadData()">Appliquer</button>
+      <button id="applyBtn">Appliquer</button>
     </section>
 
     <section class="chart-container" id="chart-container">
       <canvas id="salesChart"></canvas>
     </section>
+
+    <div id="message" style="text-align:center;margin-top:12px;color:#cc0000;"></div>
   </main>
 
   <footer>
-    <p>⚡ Tableau connecté à Google Sheets</p>
+    <p>⚡ Connecté à Google Sheets</p>
   </footer>
 
   <script src="script.js"></script>
